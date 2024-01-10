@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cgj8ypv67dhm"]
+
+[node name="fruit" type="ColorRect"]
+offset_right = 64.0
+offset_bottom = 64.0
+color = Color(0.494245, 1.16115e-06, 0, 1)

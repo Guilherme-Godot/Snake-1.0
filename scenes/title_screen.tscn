@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4kt47vigystc"]
+
+[ext_resource type="Script" path="res://scenes/title_background.gd" id="1_dpx0b"]
+
+[sub_resource type="Gradient" id="Gradient_ypqny"]
+offsets = PackedFloat32Array(0, 0.883117, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.541176, 0.168627, 0.886275, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_eu3g4"]
+gradient = SubResource("Gradient_ypqny")
+
+[node name="title_screen" type="Node2D"]
+
+[node name="title_background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_right = 707.0
+offset_bottom = 665.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_eu3g4")
+script = ExtResource("1_dpx0b")
+
+[node name="title" type="Label" parent="title_background"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 140.0
+offset_right = 621.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 128
+text = "Y.A.S.K."
+
+[node name="subtitle" type="Label" parent="title_background"]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 293.0
+offset_right = 589.0
+offset_bottom = 338.0
+theme_override_font_sizes/font_size = 32
+text = "yet  another  snake  clone"
+
+[node name="Label" type="Label" parent="title_background"]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 412.0
+offset_right = 417.0
+offset_bottom = 446.0
+theme_override_font_sizes/font_size = 24
+text = "start"
